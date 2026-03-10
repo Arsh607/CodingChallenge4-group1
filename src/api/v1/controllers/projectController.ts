@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import projectService from "../services/projectService";
+import * as projectService from "../services/projectService";
 
 import { HTTP_STATUS } from "../../../constants/httpConstants";
  

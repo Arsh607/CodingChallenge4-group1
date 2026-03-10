@@ -5,8 +5,8 @@ import {
     consoleLogger,
 } from "./api/v1/middleware/logger";
 import errorHandler from "./api/v1/middleware/errorHandler";
-
-/** import the routes **/
+import projectRoutes from "./api/v1/routes/projectRoutes";
+import adminRoutes from "./api/v1/routes/adminRoutes";
 
 
 const app: Express = express();
@@ -19,13 +19,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.use(express.json());
-
-
-/** Update the api endppoints with appropriate routes **/
-
-
-
-
+app.use('/api/v1', projectRoutes);
+app.use('/api/v1/admin', adminRoutes);
 app.use(errorHandler);
 
 export default app;

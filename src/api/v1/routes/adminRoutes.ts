@@ -4,7 +4,7 @@ import isAuthorized from "../middleware/authorize";
 import { setCustomClaims } from "../controllers/adminController";
 const router = Router();
 router.post(
-    "/admin/setCustomClaims",
+    "/setCustomClaims",
     authenticate,
     isAuthorized({ hasRole: ["admin"] }),
     setCustomClaims
