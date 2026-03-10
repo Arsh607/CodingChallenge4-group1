@@ -1,7 +1,7 @@
 {
   "name": "comp-3018-coding-challenge-4",
   "version": "1.0.0",
-  "description": "",
+  "description": "You need to set up a single github repository for the group. You may follow the steps below to complete the initial setup:\r 1. First, create an empty repository on github.\r 2. Clone this starter repo into your local repo in pc.\r 3. After cloning this repository, you need to install the necessary npm modules that includes:\r      * npm install typescript ts-node @types/node --save-dev\r      * npm install express @types/express\r      * npm install jest ts-jest @types/jest supertest @types/supertest --save-dev\r      * npm install morgan @types/morgan\r      * npm install joi\r      * npm install firebase-admin",
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/server.ts",
@@ -30,5 +30,17 @@
     "firebase-admin": "^13.7.0",
     "joi": "^18.0.2",
     "morgan": "^1.10.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arsh607/CodingChallenge4-group1.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Arsh607/CodingChallenge4-group1/issues"
+  },
+  "homepage": "https://github.com/Arsh607/CodingChallenge4-group1#readme"
 }
